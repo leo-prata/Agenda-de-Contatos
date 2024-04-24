@@ -3,5 +3,3 @@ node_modules
 webpack.config.js
 bundle.js
 bundle.js.map
-package-lock.json
-package.json
