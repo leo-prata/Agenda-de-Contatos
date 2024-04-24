@@ -9,10 +9,11 @@ exports.outroMiddleware = (req, res, next) => {
 };
 
 exports.checkCsrfEror = (err, req, res, next) => {
-  if (err && err.code === "EBADCSRFTOKEN") {
-    //codigo erro csrf
+  if (err) {
     return res.render("404");
   }
+
+  next();
 };
 
 exports.csrfMiddleware = (req, res, next) => {
