@@ -1,0 +1,19 @@
+<%- include("includes/head")  %>
+  <body>
+    <section class="container">
+      <h1>
+        <% if(typeof titulo !== "undefined") { %> <%= titulo %> <% } else { %> O
+        título não foi enviado <% } %>
+      </h1>
+
+      <form action="/" method="POST">
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <label>Cliente</label>
+        <input type="text" name="cliente" />
+        <button>Enviar</button>
+      </form>
+    </section>
+
+    <script src="./assets/js/bundle.js"></script>
+  </body>
+</html>
