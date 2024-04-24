@@ -1,19 +1,43 @@
-<%- include("includes/head")  %>
-  <body>
-    <section class="container">
-      <h1>
-        <% if(typeof titulo !== "undefined") { %> <%= titulo %> <% } else { %> O
-        título não foi enviado <% } %>
-      </h1>
+<%- include("includes/head") %> <%- include("includes/nav") %>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2"></div>
 
-      <form action="/" method="POST">
-        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-        <label>Cliente</label>
-        <input type="text" name="cliente" />
-        <button>Enviar</button>
-      </form>
-    </section>
+    <div class="col-lg-8 my-3">
+      <h1 class="text-center">Agenda</h1>
+      <p class="text-center lead">Seus contatos estão abaixo</p>
 
-    <script src="./assets/js/bundle.js"></script>
-  </body>
-</html>
+      <div class="row">
+        <div class="col my-3">
+          <div class="alert alert-danger">Um erro qualquer</div>
+        </div>
+      </div>
+
+      <div class="responsive-table">
+        <table class="table my-3">
+          <tr>
+            <td>Leo</td>
+            <td>Prata</td>
+            <td>55 32 940028922</td>
+            <td>leoprata@email.br</td>
+          </tr>
+          <tr>
+            <td>Leo</td>
+            <td>Prata</td>
+            <td>55 32 940028922</td>
+            <td>leoprata@email.br</td>
+          </tr>
+          <tr>
+            <td>Leo</td>
+            <td>Prata</td>
+            <td>55 32 940028922</td>
+            <td>leoprata@email.br</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-lg-2"></div>
+  </div>
+</div>
+<%- include("includes/footer")%>
