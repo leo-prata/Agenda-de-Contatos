@@ -79,6 +79,13 @@ class Contato {
       new: true,
     });
   }
+
+  static async buscaContatos() {
+    const contatos = await ContatoModel.find().sort({
+      dataCriacao: -1, // -1 == ordem descrescente
+    });
+    return contatos;
+  }
 }
 
 module.exports = Contato;
