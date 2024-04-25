@@ -86,6 +86,14 @@ class Contato {
     });
     return contatos;
   }
+
+  static async delete(id) {
+    if (typeof id !== "string") {
+      return;
+    }
+    const contato = await ContatoModel.findOneAndDelete({ _id: id });
+    return contato;
+  }
 }
 
 module.exports = Contato;

@@ -7,8 +7,7 @@
       <h1 class="text-center">Agenda</h1>
       <p class="text-center lead">Seus contatos estão abaixo</p>
 
-      <%- include("includes/messages") %>
-
+      <%- include("includes/messages") %> <% if(contatos.length > 0) { %>
       <div class="responsive-table">
         <table class="table my-3">
           <% contatos.forEach(contato => { %>
@@ -27,6 +26,9 @@
           <% }); %>
         </table>
       </div>
+      <% } else { %>
+      <p class="text-center lead">Sua agenda está vazia.</p>
+      <% } %>
     </div>
 
     <div class="col-lg-2"></div>
