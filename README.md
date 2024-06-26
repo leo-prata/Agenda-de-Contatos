@@ -1,21 +1,30 @@
-# Agenda de Contatos
+# Contact Agenda
 
-Este projeto é uma aplicação de agenda de contatos desenvolvida com Node.js, EJS e MongoDB.
+This project is a contact agenda application developed using Node.js, EJS, and MongoDB.
 
-## Sobre o Projeto
+## About the Project
 
-A aplicação permite que os usuários se cadastrem e façam login. Uma vez logados, os usuários podem criar contatos com nome, email e senha. Além disso, os usuários têm a capacidade de editar e excluir esses contatos conforme necessário.
+The application allows users to register and log in. Once logged in, users can create contacts with a name, email, and password. Additionally, users have the ability to edit and delete these contacts as needed.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **Node.js**: Utilizado para o desenvolvimento do backend da aplicação.
-- **EJS (JavaScript Incorporado)**: Utilizado para o desenvolvimento do frontend. O EJS permite gerar HTML com JavaScript puro, tornando a aplicação dinâmica e interativa.
-- **MongoDB**: Utilizado como banco de dados para armazenar informações dos usuários e contatos.
+- **Node.js:** Used for backend development.
 
-## Funcionalidades
+- **EJS (Embedded JavaScript):** Used for frontend development. EJS allows generating HTML with pure JavaScript, making the application dynamic and interactive.
 
-- **Cadastro de usuários**
-- **Login de usuários**
-- **Criação de contatos**
-- **Edição de contatos**
-- **Exclusão de contatos**
+- **MongoDB:** Used as the database to store user and contact information.
+
+<p align="right">
+<img src="/public/PuffleAzul.webp" alt="black puffle" width="190" align="right" />
+</p>
+<br /> <br /> <br /> <br /> <br /> <br /> 
+
+## Features
+
+- User registration
+- User login
+- Contact creation
+- Contact editing
+- Contact deletion
+
+
